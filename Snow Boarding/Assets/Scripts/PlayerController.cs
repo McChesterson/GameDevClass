@@ -24,6 +24,5 @@ public class PlayerController : MonoBehaviour
         {
             rb2D.AddTorque(torqueAmount);
         }
-        //if (circleColl touches anything with the ground tag)
     }
 }
