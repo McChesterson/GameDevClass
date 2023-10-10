@@ -39,6 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1279672737
+    locked: 0
   - name: Player
     uniqueID: 297861823
     locked: 0
@@ -47,7 +50,4 @@ TagManager:
     locked: 0
   - name: Snow
     uniqueID: 1344819873
-    locked: 0
-  - name: Background
-    uniqueID: 1279672737
     locked: 0

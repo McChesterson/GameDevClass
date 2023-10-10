@@ -16,6 +16,7 @@ public class LoseDetection : MonoBehaviour
         {
             deathEffect.transform.position = gameObject.transform.position + new Vector3 (0, -1f, 0);
             deathEffect.Play();
+            gameObject.SetActive(false);
             Invoke("ReloadScene", loadDelay);
             hasDied = true;
         }
