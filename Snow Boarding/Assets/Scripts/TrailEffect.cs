@@ -5,6 +5,13 @@ using UnityEngine;
 public class TrailEffect : MonoBehaviour
 {
     public ParticleSystem trailEffect;
+
+
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        trailEffect.transform.position = gameObject.transform.position;
+    }
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Ground")
@@ -13,6 +20,7 @@ public class TrailEffect : MonoBehaviour
             Debug.Log("trailStarted");
         }
     }
+
     void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.tag == "Ground")

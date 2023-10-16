@@ -16,8 +16,8 @@ public class LoseDetection : MonoBehaviour
         if (other.tag == "Ground" && hasDied == false)
         {
             deathEffect.transform.position = gameObject.transform.position;
-            deathSound.transform.position = gameObject.transform.position;
             deathEffect.Play();
+            deathSound.transform.position = gameObject.transform.position;
             deathSound.Play();
             gameObject.SetActive(false);
             Invoke("ReloadScene", loadDelay);
