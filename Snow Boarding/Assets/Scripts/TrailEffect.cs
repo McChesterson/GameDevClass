@@ -7,10 +7,10 @@ public class TrailEffect : MonoBehaviour
     public ParticleSystem trailEffect;
 
 
-    private void OnCollisionStay2D(Collision2D other)
-    {
-        trailEffect.transform.position = gameObject.transform.position;
-    }
+    //private void OnCollisionStay2D(Collision2D other)
+    //{
+    //    trailEffect.transform.position = gameObject.transform.position;
+    //}
 
     void OnCollisionEnter2D(Collision2D other)
     {

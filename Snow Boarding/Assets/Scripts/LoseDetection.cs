@@ -13,7 +13,7 @@ public class LoseDetection : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         
-        if (other.tag == "Ground" && hasDied == false)
+        if (other.tag == "Ground" && !hasDied)
         {
             deathEffect.transform.position = gameObject.transform.position;
             deathEffect.Play();
